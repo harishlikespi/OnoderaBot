@@ -46,7 +46,7 @@ public class Bot extends ListenerAdapter{
 	
 	public static void main(String[] args) throws LoginException, InterruptedException, FileNotFoundException {
 		readBasic();
-		final JDABuilder builder = JDABuilder.createDefault("NzQ2NDAwNzgxMTI4Njk1ODk5.Xz_x5Q.Tfdk5KI--un_RCcqOSnkt59MLxc");
+		final JDABuilder builder = JDABuilder.createDefault("TOKEN");
 		builder.setAutoReconnect(true);
 		builder.addEventListeners(new Bot());
 		builder.build();	
